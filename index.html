@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="src/css/global/DEFAULT.css">
+    <link rel="stylesheet" href="src/css/global/GRID.css">
+
+    <link rel="stylesheet" href="src/css/desktop/index.css">
+    <link rel="stylesheet" href="src/css/desktop/banners.css">
+
+    <link rel="stylesheet" href="src/css/mobile/index.css">
+    <link rel="stylesheet" href="src/css/mobile/banners.css">
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<body>
+    <aside class="mob_hide"> 
+        <menu>
+            <ul>
+                <li id="btn_home"><img class="icons" src="src/static/icons/icon_home.svg" alt="home"></li>
+                <li id="btn_mobile"><img class="icons" src="src/static/icons/icon_mobile.svg" alt="mobile"></li>
+                <li id="btn_code"><img class="icons" src="src/static/icons/icon_code.svg" alt="code"></li>
+                <li id="btn_real"><img class="icons ico_real" class="icon_real" src="src/static/icons/icon_real.svg" alt="real"></li>
+                <li id="btn_connect"><img class="icons" src="src/static/icons/icon_connect.svg" alt="connect"></li>
+            </ul>
+        </menu>
+    </aside>
+
+    <header class="mob_hide">
+        <menu class="menu-on">
+            <img class="ico_menu" src="src/static/icons/icon_menu.svg" alt="menu">
+            <ul>
+                <li><a href="index.html">Plataforma</a></li>
+                <li><a href="cadastro.html">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main id="main"> 
+        <section id="home" class="reveal">
+            <div id="img_home" class="banner"></div>
+            <h1>Tudo que você precisa já esta na sua mão</h1>
+            <button>Vamos começar?</button>
+        </section>
+
+        <section id="mobile" class="reveal">
+            <div id="img_mobile" class="banner"></div>
+            <h1 class="mob_hide">Tudo feito atraves das redes sociais que você já usa</h1>
+            <div class="container">
+                <!-- DESKTOP TEXTS-->
+                <div class="block mob_hide">
+                    <h1>1</h1>
+                    <p>Tudo é feito por meio de curtas aulas de video, mensagens nas suas redes sociais e muitos exercicios práticos.</p>
+                </div>
+                <div class="block mob_hide">
+                    <h1>2</h1>
+                    <p>No lugar de aulas longas e profundas de 1 hora, divimos toda essa aula em varios conteúdos durante o dia todo.</p>
+                </div>
+                <div class="block mob_hide">
+                    <h1>3</h1>
+                    <p>Varios exercicios diferentes durante todo o dia, atraves de BOT no whatsapp, que vai te ajudar a manter o aprendizado.</p>
+                </div>
+
+                <!-- MOBILE TEXTS-->
+                <div class="block desk_hide">
+                    <h1>1</h1>
+                    <p>Tudo já dentro das suas redes sociais.</p>
+                </div>
+                <div class="block desk_hide">
+                    <h1>2</h1>
+                    <p>Aulas por mensagens ao longo do dia.</p>
+                </div>
+                <div class="block desk_hide">
+                    <h1>3</h1>
+                    <p>Muitos exercicios para manter o aprendizado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="code" class="reveal">
+            <div id="img_code" class="banner"></div>
+            <h1>Independente dos seus recursos.</h1>
+            <p class="mob_hide">
+                Todos os cursos podem ser feitos por qualquer dispositivos com conexão a internet.
+                <br>
+                <br>
+                Exercicios simples podem ser respondidos através do proprio BOT na sua rede social preferida.
+                <br>
+                <br>
+                Exercicios mais complexos podem ser feitos totalmente online através da nossa plataforma parceira em qualquer dispositivo.
+                <br>
+                <br>
+                Recomendamos o uso de um teclado para melhor codificação em dispositivos pequenos, mas caso não seja possivel, pode ser feito perfeitamente sem nenhum recurso adicional.
+            </p>
+
+            <p class="desk_hide">
+                Todos os cursos podem ser feitos por qualquer coisa com conexão a internet.
+                <br>
+                <br>
+                Exercicios simples que podem ser respondidos na sua rede social.
+                <br>
+                <br>
+                Exercicios maiores podem ser feitos totalmente online em qualquer dispositivo.
+            </p>
+        </section>
+
+        <section id="real" class="reveal">
+            <div id="img_real" class="banner"></div>
+            <h1>Projetos reais</h1>
+            <div class="container">
+                <div class="block b_real">
+                    <h1>1</h1>
+                    <p>Tudo é feito por meio de curtas aulas de video, mensagens nas suas redes sociais e muitos exercicios práticos.</p>
+                </div>
+                <div class="block b_real">
+                    <h1>2</h1>
+                    <p>No lugar de aulas longas e profundas de 1 hora, divimos toda essa aula em varios conteúdos durante o dia todo.</p>
+                </div>
+                <div class="block b_real">
+                    <h1>3</h1>
+                    <p>Varios exercicios diferentes durante todo o dia, atraves de BOT no whatsapp, que vai te ajudar a manter o aprendizado.</p>
+                </div>
+            </div>
+            <button id="r-arrow" class="desk_hide"> <img src="src/static/icons/icon_arrow.svg" alt="next"></button>
+        </section>
+
+        <section id="connect" class="reveal">
+            <div id="img_connect" class="banner"></div>
+            <h2 class="mob_hide">Aprenda a profissão que vai abrir suas portas para um novo mundo!</h2>
+            <form action="submit" method="post">
+                <h2>Cadastre-se</h2>
+                <input type="text" name="phone" placeholder="Nome de usuário">
+                <input type="password" name="password" placeholder="Senha">
+                <button type="submit">Criar conta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer> 
+        <menu class="mobile_menu desk_hide">
+            <ul>
+                <li><a href="#home"><img class="icons" src="src/static/icons/icon_home.svg" alt="home"></a></li>
+                <li><a href="#code"><img class="icons" src="src/static/icons/icon_code.svg" alt="code"></a></a></li>
+                <li><a href="#connect"><img class="icons" src="src/static/icons/icon_connect.svg" alt="connect"></a></a></li>
+            </ul>
+        </menu>
+    </footer>
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+:root {
+    --color-primary: #4D6BA3;
+    --color-secondary: #c4c4c4;
+    --color-tertiary: #F5F5F5;
+    --black: ##666666;
+    --white: #ffffff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    color: var(--black);
+    font-family: 'Fira Code', monospace;
+}
+
+body, html{
+    height: 100%;
+}
+
+/*DEV tags*/
+.-b{
+background-color: var(--color-secondary);
+}

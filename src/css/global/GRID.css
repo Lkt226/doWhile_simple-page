@@ -1,0 +1,113 @@
+/** --> DESKTOP */
+@media screen and (min-width: 641px) {
+    body{
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-template-areas: 
+            "aside header"
+            "aside main"
+            "footer footer";
+    }
+
+    #home{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content min-content;
+        grid-template-areas: 
+            "msg img"
+            "btn img";
+    }
+    #code{
+        display: grid;
+        grid-template-columns: 2.5fr 3fr;
+        grid-template-areas: 
+            "img title"
+            "img msg";
+    }
+    #real{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content min-content;
+        grid-template-areas: 
+            "title img"
+            "con img";
+    }
+    #connect{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        grid-template-areas: 
+            "img img"
+            "title form";
+    }
+}
+
+/** --> MOBILE */
+@media screen and (max-width: 640px) {
+    body{
+        display: grid;
+        grid-template-rows: 1fr min-content;
+        grid-template-areas: 
+            "main"
+            "footer";
+    }
+}
+
+/** --> AREA NAMES */
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+}
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+
+/*HOME*/
+#home > h1{
+    grid-area: msg;
+}
+#home > button{
+    grid-area: btn;
+}
+#home > #img_home{
+    grid-area: img;
+}
+
+/*CODE*/
+#code > #img_code{
+    grid-area: img;
+}
+#code > h1{
+    grid-area: title;
+}
+#code > p{
+    grid-area: msg;
+}
+
+/*REAL*/
+#real > #img_real{
+    grid-area: img;
+}
+#real > h1{
+    grid-area: title;
+}
+#real > .container{
+    grid-area: con;
+}
+
+/*CONNECT*/
+#connect > #img_connect{
+    grid-area: img;
+}
+#connect > h1{
+    grid-area: title;
+}
+#connect > form{
+    grid-area: form;
+}

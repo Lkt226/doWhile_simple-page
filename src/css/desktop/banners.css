@@ -1,0 +1,32 @@
+@media screen and (min-width: 641px) {
+    .banner{
+        width: 100%;
+        height: 50vh;
+        margin: 0 auto;
+        padding: 0;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: var(--white);
+        border-radius: 0;
+        box-shadow: 0 0 0;
+        border: 0;
+        overflow: hidden;
+    }
+
+    #img_home{
+        background-image: url("../../static/desktop/banner_home.png");
+    }
+    #img_mobile{
+        background-image: url("../../static/desktop/banner_mobile.png");
+    }
+    #img_code{
+        background-image: url("../../static/desktop/banner_code.png");
+    }
+    #img_real{
+        background-image: url("../../static/desktop/banner_real.png");
+    }
+    #img_connect{
+        background-image: url("../../static/desktop/banner_connect.png");
+    }
+}
